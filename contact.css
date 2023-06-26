@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+nav:hover{
+    background-color:beige;
+}
+
+.logo img{
+    width: 250px;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    background: #34ae4e;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.nav-side{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-side button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(105, 159, 96);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-side button a:hover{
+    background-color: #4f8f53;
+}
+
+.contact-head{
+    position: relative;
+}
+
+.contact-img img{
+    width: 100%;
+    height: 100vh;
+}
+
+.img-content{
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 64%;
+    right: 10%;
+    color: rgb(229, 174, 174);
+
+}
+
+.contact-bottom{
+    background-color: #b8e3bb;
+    padding:50px;
+    display: flex;
+}
+
+.left-content{
+    padding: 50px;
+  
+}
+.header{
+    margin-bottom: 30px;
+}
+
+.header h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+input,label,textarea,option,select{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input,textarea,select{
+    padding: 5px 10px;
+}
+
+.firstName{
+    display: flex;
+    flex-direction: column;
+}
+
+.secondName{
+    display: flex;
+    flex-direction: column;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+.hereAbout{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.guest-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-event{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-btn button{
+    background-color: #2e5a31;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 8px;
+}

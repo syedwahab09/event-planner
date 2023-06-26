@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+}
+
+nav:hover{
+    background-color:beige;
+}
+
+.logo img{
+    width: 250px;
+    height: 80px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    background: #34ae4e;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    
+}
+
+.nav-side{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-side button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(105, 159, 96);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-side button a:hover{
+    background-color: #4f8f53;
+}
+
+
+
+.home-img img{
+    width: 100%;
+    height: 90vh;
+
+}
+
+.img-content{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-content:hover{
+    background-color:beige ;
+}
+
+
+
+.logo-img img{
+    width: 350px;
+    height: 120px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 60px;
+}
+
+.home-left{
+    flex-basis: 45%;
+}
+
+.home1-img img{
+    width: 600px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px pink;
+}
+
+.home-right{
+    flex-basis: 50%;
+}
+
+.right-head{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.right-content p{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.right-phone input{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 15px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.right-phone button{
+    background-color: rgb(96, 30, 30);
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.right-phone button:hover{
+    background-color: rgb(16, 5, 5);
+}
+
+.colab p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.colab-img{
+    display: flex;
+    align-items: center;
+}
+
+.home-services{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.head-hS h1{
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight:700 ;
+}
+
+.para-hs p{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(108, 108, 199);
+}
+
+.button-hs button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-hs button{
+    background-color: rgba(142, 61, 131, 0.905);
+    padding: 8px 19px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-hs button:hover{
+    background-color: rgb(123, 34, 119);
+
+}
+
+.left-hS{
+    margin-left: 20px;
+    flex-basis: 60%;
+}
+
+.right-hS{
+    flex-basis: 30%;
+}
+
+.right-hS img{
+    box-shadow:0 0 10px rgb(176, 45, 67);
+    border-radius: 30px;
+}
+
+.home-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.left-hp{
+    flex-basis: 60%;
+}
+
+.left-hp img{
+    border-radius: 30px;
+    box-shadow: 0 0px 10px pink;
+}
+
+.right-hp{
+    flex-basis: 35%;
+}
+
+.head-hp h1{
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight:700 ;
+}
+
+.para-hp p{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(108, 108, 199);
+}
+
+.button-hp button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-hp button {
+    text-decoration: none;
+    background-color: rgb(188, 85, 102);
+    padding: 8px 19px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-hp button:hover{
+    background-color: rgb(123, 34, 119);
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <title>BBB | Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="log-img">
+            <img src="/Images/login/log-img.jpeg" alt="">
+
+        </div>
+        <div class="log-form">
+            <div class="log-logo">
+                <img src="/Images/logo-1.png" alt="">
+
+            </div>
+            <div class="google">
+                <img src="/Images/login/google-logo.png" alt="">
+                <p>CONTINUE WITH GOOGLE</p>
+            </div>
+            <div class="or">
+                <p>( OR )</p>
+            </div>
+            <form name="login">
+                <div class="email">
+                    <input type="email" id="email" placeholder="Email Address">
+
+                </div>
+                <div class="pass">
+                    <input type="password" id="password" placeholder="Password">
+
+                </div>
+                <div class="forgot">
+                    <p><a href="#">Forgot your password?</a></p>
+
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="RememberMe">
+                    <label for="RememberMe">Remember me</label>
+                </div>
+
+                <div class="confirmation-not">
+                    <p id="msg-notL"></p>
+                </div>
+                
+                <div class="log-btn">
+                    <input type="button" onclick="clickL1()" value="Log In" >
+                </div>
+            </form>
+
+            <div class="newAC">
+                <p>Don't have an account?</p>
+                <p><a href="/register.html">Register here</a></p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

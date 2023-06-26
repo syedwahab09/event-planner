@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/register.css">
+    <title>BBB | Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="reg-img">
+            <img src="/Images/login/log-img.jpeg" alt="">
+
+        </div>
+        <div class="reg-form">
+            <div class="reg-logo">
+                <img src="/Images/logo-1.png" alt="">
+
+            </div>
+            <div class="google">
+                <img src="/Images/login/google-logo.png" alt="">
+                <p>CONTINUE WITH GOOGLE</p>
+            </div>
+            <div class="or">
+                <p>( OR )</p>
+            </div>
+            <form name="form" id="form-s">
+                <div class="email">
+                    <input type="email" id="email" placeholder="Email Address" required>
+
+                </div>
+                <div class="pass">
+                    <input type="password" id="pass" placeholder="Password" required>
+
+                </div>
+                <div class="conf-pass">
+                    <input type="password" id="conf-pass" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="confirmation-not">
+                    <p id="msg-not"></p>
+                </div>
+                
+                <div class="reg-btn">
+                    <input type="button" onclick="check()" value="Create Account">
+                </div>
+
+                
+            </form>
+            <div class="confirmation-yes">
+                <p id="msg-yes"></p>
+            </div>
+            <div class="oldAC">
+                <p id="log-in">Already have an account?</p>
+                <p><a href="/login.html" id="log-act">Login here!</a></p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/script.js"></script>
+    
+</body>
+</html>
